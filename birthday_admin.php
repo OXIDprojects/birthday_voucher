@@ -52,7 +52,7 @@ class birthday_admin extends birthday_admin_parent
   	if ($onetimesale == 'false' )
   		$sSql .= "AND OXPASSWORD <> ''";
   	
-  	$rs = oxDb::getDb(0)->SelectLimit( $sSql);
+  	$rs = oxDb::getDb(2)->SelectLimit( $sSql);
   	return $rs;	
 	}
 	

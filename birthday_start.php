@@ -21,7 +21,7 @@ class birthday_start extends birthday_start_parent
 {
        
 
-  public function init()
+  public function render()
   {
 			
     if ($this->birthday_checkmethod())
@@ -30,8 +30,8 @@ class birthday_start extends birthday_start_parent
   		$this->_aViewData['bvdate']  = $bdadmin->send_birthdaymail();
 		}
 		
-		parent::init();
-    return;
+		parent::render();
+    return $this->_sThisTemplate;
   }
     
 	protected function birthday_checkmethod() {
