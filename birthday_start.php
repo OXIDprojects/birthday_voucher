@@ -15,8 +15,8 @@
  *    You should have received a copy of the GNU General Public License
  *    along with OXID eShop Community Edition.  If not, see <http://www.gnu.org/licenses/>.
  *
- * @link      http://www.stefan-korn.de 
  */
+ 
 class birthday_start extends birthday_start_parent 
 {
        
@@ -29,7 +29,7 @@ class birthday_start extends birthday_start_parent
     if ($this->birthday_checkmethod())
 		{
   		$bdadmin = oxnew("birthday_admin");		
-  		$this->_aViewData['bvdate']  = $bdadmin->send_birthdaymail();
+  		$this->_aViewData['bvdate'] = $bdadmin->send_birthdaymail();
 		}
 		
 		parent::render();

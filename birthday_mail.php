@@ -15,8 +15,8 @@
  *    You should have received a copy of the GNU General Public License
  *    along with OXID eShop Community Edition.  If not, see <http://www.gnu.org/licenses/>.
  *
- * @link      http://www.stefan-korn.de 
  */
+ 
 class birthday_mail extends birthday_mail_parent
 {
 	protected $_sBirthdayEmailTemplate = "birthday_mail_html.tpl";
