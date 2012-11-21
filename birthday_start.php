@@ -23,6 +23,8 @@ class birthday_start extends birthday_start_parent
 
   public function render()
   {
+  
+    $this->setAdminMode( false );
 			
     if ($this->birthday_checkmethod())
 		{
